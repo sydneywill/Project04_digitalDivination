@@ -1,0 +1,83 @@
+img {
+    width: 200px;
+    height: auto; /* maintains aspect ratio */
+  }
+
+  body {
+    font-family: 'Jacquard 12', sans-serif;
+    background-color: #f0f0f0;
+    /* background-image: url(''); */
+  }
+  
+  button {
+    font-family: inherit;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #gameFinderForm {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  #birthYear {
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .game-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .game-item {
+    position: relative;
+  }
+  
+  .game-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .game-item h3 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .game-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .game-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }

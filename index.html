@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>𝕲𝖆𝖒𝖊 𝕱𝖎𝖓𝖉𝖊𝖗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <h1>Find Games Released in Your Birth Year</h1>
+  <form id="gameFinderForm">
+    <label for="birthYear">Enter your birth year:</label>
+    <input type="number" id="birthYear" name="birthYear" required>
+    <button type="submit">Find Games</button>
+  </form>
+  <div id="gameResults"></div>
+  <footer>
+    <p>Game data provided by <a href="https://www.giantbomb.com/api/" target="_blank" rel="noopener noreferrer">Giant Bomb API</a></p>
+  </footer>
+</body>
+</html>
